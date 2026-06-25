@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thavimathi JP — Aspiring Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Thavimathi JP, a B.Tech Information Technology student and aspiring Full Stack Developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head> 
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket"></span>Thavimathi JP<span class="logo-bracket"></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HOME / HERO SECTION ============ -->
+  <section class="hero" id="Home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+
+      <!-- Left: Intro text -->
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow"></p>
+        <h1 class="hero-name">Hi, I'm <span class="highlight">Thavimathi JP</span></h1>
+        <h2 class="hero-role">B.Tech IT Student  <span id="typedRole" class="typed-role"></span><span class="cursor-blink">|</span></h2>
+        <p class="hero-desc">
+          I'm passionate about Web Development, Java programming, and building modern,
+          user-friendly websites. I love exploring new technologies and constantly
+          sharpening my programming skills — one commit at a time.
+        </p>
+        <div class="hero-buttons">
+          <a href="resume/Thavi_Resume.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/thavimathijp12-png" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/thavimathi-palaniyappan-491b2a293" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thavimathijp12@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: IDE-style code window as profile placeholder -->
+      <div class="hero-visual reveal">
+        <div class="code-window">
+          <div class="code-window-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-window-title">profile.js</span>
+          </div>
+          <div class="code-window-body">
+<pre><code><span class="code-kw">const</span> <span class="code-var">profile</span> 
+  <span class="code-prop"><Nav></Nav>ame</span>: <span class="code-str">Thavimathi JP</span>
+  <span class="code-prop">Degree</span>: <span class="code-str">B.Tech - IT</span>
+  <span class="code-prop">Role</span>: <span class="code-str">Full Stack Dev</span>
+  <span class="code-prop">Status</span>: <span class="code-str">Learning daily</span>
+  <span class="code-prop">Avatar</span>: <span class="code-comment">Profile image</span>
+</code></pre>
+          </div>
+          <div class="avatar-frame">
+            <img src="images/thavi.jpeg" alt="Profile Photo">
+            <!-- <i>class="fa-solid fa-user"></i> -->
+            <span class="avatar-caption">Full Stack Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="about" class="scroll-down-indicator" aria-label="Scroll to About section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">About-Me</p>
+      <h2 class="section-title reveal">Get To Know Me</h2>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <i class="fa-solid fa-user-graduate card-icon"></i>
+          <h3>Personal Introduction</h3>
+          <p>
+            I am a B.Tech Information Technology student passionate about Web Development,
+            Java Programming, and creating modern, responsive websites. I enjoy learning new
+            technologies and constantly improving my programming skills through hands-on projects.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <i class="fa-solid fa-bullseye card-icon"></i>
+          <h3>Career Objective</h3>
+          <p>
+            To grow as a skilled Full Stack Developer by applying my knowledge of web
+            technologies and programming languages to build scalable, efficient, and
+            user-friendly applications, while continuously learning industry best practices.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <i class="fa-solid fa-book card-icon"></i>
+          <h3>Education </h3>
+          <p>
+            Currently pursuing a Bachelor of Technology in Information Technology, building a
+            strong foundation in programming, databases, web development, and software
+            engineering concepts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal"></p>
+      <h2 class="section-title reveal">My Tech Stack</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-html5 skill-icon" style="color:#e34f26;"></i>
+          <h4>HTML</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="90"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-css3-alt skill-icon" style="color:#2965f1;"></i>
+          <h4>CSS</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-js skill-icon" style="color:#f7df1e;"></i>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-java skill-icon" style="color:#f89820;"></i>
+          <h4>Java</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-python skill-icon" style="color:#3776ab;"></i>
+          <h4>Python</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="70"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-solid fa-database skill-icon" style="color:#00758f;"></i>
+          <h4>SQL</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <i class="fa-brands fa-git-alt skill-icon" style="color:#f05032;"></i>
+          <h4>Git &amp; GitHub</h4>
+          <div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal"></p>
+      <h2 class="section-title reveal">Things I've Built</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <!-- <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-tab-name">student-management.sql</span>
+          </div>
+          <div class="project-image-placeholder">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+           <div class="project-body">
+            <h3>Student Management System</h3>
+            <p>
+              A desktop/web application to manage student records — add, update, search and
+              delete student data with a clean interface and persistent database storage.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Swing</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/thavimathijp12-png" class="btn btn-small btn-outline" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div> -->
+        <!-- </article> --> 
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-tab-name">E-commerce-app.js</span>
+          </div>
+          <div class="project-image-placeholder">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="project-body">
+            <h3>E-Commerce Website</h3>
+            <p>
+              A responsive online store with product listings, a shopping cart, and a simple
+              checkout flow, focused on clean UI and smooth user experience across devices.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/thavimathijp12-png/E-Commerce-Website/settings/pages" class="btn btn-small btn-outline" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href=" https://thavimathijp12-png.github.io/E-Commerce-Website/" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-tab-name">Portfolio.html</span>
+          </div>
+          <div class="project-image-placeholder">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A fully responsive personal portfolio (this very site!) showcasing my skills,
+              projects, and education, complete with dark/light mode and smooth animations.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION SECTION ============ -->
+  <section class="section education" id="education">
+    <div class="container">
+      <p class="section-eyebrow reveal"></p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="education-timeline">
+        <div class="education-card reveal">
+          <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="education-details">
+            <h3>B.Tech — Information Technology</h3>
+            <p class="education-college">Sri Shanmugha College Of Engineering and Technology, Salem</p>
+            <div class="education-meta">
+              <span><i class="fa-solid fa-calendar-days"></i> Year of Study: Final Year (2023 – 2027)</span>
+              <span><i class="fa-solid fa-chart-line"></i> CGPA: 7.5 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal"></p>
+      <h2 class="section-title reveal">Let's Connect</h2>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="contact-lead">
+            I'm Open to Opportunities and  Collaborations, or just a quick Hello. My Inbox is Always Open
+          </p>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:thavi@example.com">thavimathijp12@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917845207680">+91 78452 07680</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/%20thavimathi-palaniyappan-491b2a293" target="_blank" rel="https://www.linkedin.com/in/%20thavimathi-palaniyappan-491b2a293">linkedin.com/in/thavi</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/thavimathijp12-png" target="_blank" rel="noopener">github.com/thavi</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-window-header">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-tab-name"></span>
+          </div>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p><span id="year"></span> Thavimathi JP Built with HTML, CSS & JavaScript</p>
+      <div class="footer-socials">
+        <a href="https://github.com/thavimathijp12-png" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thavimathi-palaniyappan-491b2a293" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thavimathijp12@gmail.com" target="_blank" rel="noopener">
+    <i class="fa-solid fa-envelope"></i>
+</a> 
+    <i class="fa-solid fa-envelope"></i>
+</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP BUTTON ============ -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
